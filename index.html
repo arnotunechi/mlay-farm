@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MLAY FARM - Meat Chicken & Flock Batch Management</title>
+    <meta name="description" content="MLAY FARM - Broiler and meat chicken flock tracking system. Save batches, record sales, home consumption with who took it, infection cure guidance, and live remaining count." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@400..700&family=Plus+Jakarta+Sans:wght@500..800&display=swap" rel="stylesheet">
+    <style>
+      @media print {
+        body * { visibility: hidden; }
+        #printable-report, #printable-report * { visibility: visible; }
+        #printable-report { position: absolute; left: 0; top: 0; width: 100%; margin: 0; padding: 20px; background: white !important; }
+        .no-print { display: none !important; }
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-50 text-neutral-900 antialiased font-['DM_Sans',sans-serif]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
